@@ -56,7 +56,7 @@
 				<img src="img/page_3_1.png">
 			</div>
 			<div id="videoBox">
-				<video id="video" src="video/video.mp4" preload = "auto"></video>
+				<video id="video" src="video/video.mp4" preload = "auto" controls></video>
 				<img src="img/page_3_5.png" data-src="img/page_3_2.png" id="playBtn">
 			</div>
 			<div id="tips" class=" animated pulse">
@@ -417,6 +417,14 @@
 	document.addEventListener("touchmove",function(e) {
 		e.preventDefault();
 	},false);
+
+	//
+	$("#page10").on("click",function(){
+		$("#shareBox").hide();
+		$("#awardBox").hide();
+		$("#popTips").show();
+		$("#page9").show();
+	})
 	</script>
 </body>
 </html>
