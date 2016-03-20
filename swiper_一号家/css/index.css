@@ -312,7 +312,7 @@ body {
   z-index: 2;
   left: -5px;
   top: 3px;
-  background: url("../img/style.jpg") no-repeat;
+  /*background: url("../img/style.jpg") no-repeat;*/
   background-size: 7px 18px;
   background-position: -2px 0;
 }
@@ -344,7 +344,7 @@ body {
   z-index: 2;
   left: -5px;
   top: 3px;
-  background: url("../img/house_size.jpg") no-repeat;
+  /*background: url("../img/house_size.jpg") no-repeat;*/
   background-size: 7px 18px;
   background-position: -2px 0;
 }
@@ -689,6 +689,9 @@ body {
 }
 .decorate_seach ul li a {
   color: red;
+}
+#ju{
+  margin-right: 33px;
 }
 .decorate_seach ul li span {
   float: right;
