@@ -134,7 +134,8 @@ function drawRouletteWheel() {
 	  img.onload=function(){  
 		  ctx.drawImage(img,0,0);      
 	  }; 
-	  ctx.drawImage(img,0,0);  
+	  ctx.drawImage(img,0,0);
+	 
   } 
 }
 
