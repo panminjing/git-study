@@ -171,7 +171,7 @@
         imgobj[i].src = imgArr[i];
         imgobj[i].onload = function(){
             num++;
-            var percent = parseInt(num / imgArr.length * 100) + "%";
+            var percent = "图片加载"+ parseInt(num / imgArr.length * 100) + "%";
             alert(percent);
             if(num == imgArr.length){
                 addlen(10);
