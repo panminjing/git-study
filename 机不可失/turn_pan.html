@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>转盘</title>
+		<style type="text/css">
+		    div{
+		    	margin: 0 auto;
+		    	position: relative;
+		    	width: 220px;
+				height: 220px;
+		    }
+			div img:nth-child(1){
+				width: 220px;
+				height: 220px;
+			}
+			div img:nth-child(2){
+				width: 52px;
+				height: 100px;
+				position: absolute;
+				left: 105px;
+				top:10px;
+				/*-webkit-transform:rotate(68deg);*/
+			}
+			a{
+				display: block;
+				width: 50px;
+				height: 25px;
+				margin: 25px auto;
+				background: rgba(210,85,85,0.5);
+				line-height: 25px;
+				text-align: center;
+				border:1px solid pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="img/pan.png"/ id="turn">
+			<img src="img/p.png" alt="" />
+		</div>
+		<a href="#" id="click">开始</a>
+		<script type="text/javascript">
+		   
+			var turn =document.getElementById("turn");
+			var click = document.getElementById("click");
+			var start = 0;
+			var end = rand(360,720);
+			console.log("end=" + end);
+			var change = end -start;
+			var t=0;
+			var maxt =30;
+			var time = 0;
+			function rand(min,max){
+				return parseInt( Math.random(max-min+1)*min);
+			}
+			function tab(){
+				time = setInterval(function(){
+					t++;
+					if(t >= maxt){
+						clearInterval(time);
+						// if( 320 > end > 290){
+						// 	alert("一等奖");
+						// }else if(50 < end < 80 || 140 < end <170){
+						// 	alert("二等奖");
+						// }else if(20 < end < 50 || 200 < end < 230 || 320 < end < 350){
+						// 	alert("三等奖");
+						// }else{
+						// 	alert("thank you");
+						// }
+						switch(true) {
+							case (end<320&&end>290):
+								alert("一等奖");
+								break;
+							case (end>50&&end<80)||(end>140 && end<170):
+								alert("二等奖");
+								break;
+							case (end>20 && end<50) || (end>200 && end<230) || (end>320 && end<350):
+								alert("三等奖");
+								break;
+							default: alert("thank you");	
+						}
+					}
+					turn.style.webkitTransform = "rotate("+(change*t/maxt + start )+"deg)";
+			
+				},50)
+			}
+			
+			click.onclick = function(){
+				tab();
+			}
+		</script>
+	</body>
+</html>

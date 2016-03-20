@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!--以上三个标签缺一不可
+	  X-UA-Compatible是针对ie8新加的一个设置，对于ie8之外的浏览器是不识别的，这个区别与content="IE=7"在无论页面是否包含<!DOCTYPE>指令，都像是使用了 Windows Internet Explorer 7的标准模式。而content="IE=EmulateIE7"模式遵循<!DOCTYPE>指令。对于多数网站来说，它是首选的兼容性模式。
+	  Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容，（以上代码IE=edge告诉IE使用最新的引擎渲染网页）这实际上破坏了“锁定”模式。 -->
+	<title>bootstrap练习</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/navbar-static-top.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+	<!-- <link rel="stylesheet" href="css/base.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/renderings.css">
+    <style type="text/css">
+        #flowList li img{
+            width: 100%;
+            background:#C0C0C0 url("img/part-three-bg.jpg") no-repeat;
+            background-position: center center;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="###">
+            <img src="img/logo.png">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="###">Home</a></li>
+            <li><a href="###">About</a></li>
+            <li><a href="###">Renderings</a></li>
+            <li><a href="###">BIM</a></li>
+            <li><a href="###">3D Animat</a></li>
+            <li><a href="###">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+   <div id="mainContent">
+        <div class="part part-1">
+            <h2 class="title-h2">DIGITAL EFFECT DRAWING</h2>
+        </div>
+
+        <div class="swiper-container">
+            <a href="###">
+                <img src="img/swiper.jpg" alt="">
+            </a>
+        </div>
+
+        <ul class="flow-list" id="flowList">
+            <li>
+                
+            </li>
+            <li class="center-list">
+                <div>
+                    <img src="img/p4.jpg" alt="">
+                    <div>
+                        <p>
+                            <span>图片标题图片标题图片标题图片标题</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/p5.jpg" alt="">
+                    <div>
+                        <p>
+                            <span>图片标题图片标题图片标题图片标题</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/p6.jpg" alt="">
+                    <div>
+                        <p>
+                            <span>图片标题图片标题图片标题图片标题</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/p2.jpg" alt="">
+                    <div>
+                        <p>
+                            <span>图片标题图片标题图片标题图片标题</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/p3.jpg" alt="">
+                    <div>
+                        <p>
+                            <span>图片标题图片标题图片标题图片标题</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                
+            </li>
+        </ul>
+    </div>
+    <div id="footer">
+        <div class="contact-box">
+            <h2 class="title-h2">CONTACT US</h2>
+            <p>Email：eric@shining365.com</p>
+            <p>Mobile Phone：86 138 1690 3400</p>
+            <p>Tel：
+                <a href="tel:021-65986866-304">+86 21 6598 6866-304</a> 
+                <a href="tel:021-65983188-304">+86 21 6598 3188-304</a>
+            </p>
+        </div>
+        <div class="copyright">
+            Copyright © 1998-2015 shining Group
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    var imgArr = ["img/p1.jpg","img/p2.jpg","img/p3.jpg","img/p4.jpg","img/p5.jpg","img/p6.jpg","img/p7.jpg","img/p8.jpg","img/p9.jpg"];
+    var context = ["图片标题图片标题图片标题图片标题","美丽的大兴安岭","桂林山水甲天下","岭南传奇","南越王","周公徒步，天下归心","三国演义","西游记","红楼梦","诗经"];
+    var flowList = document.getElementById("flowList");
+    var listArr = flowList.children;
+    function rand(min,max){
+        return parseInt(Math.random()*(max - min + 1) + min);
+    }
+        
+    function addElement(){
+        var imgList = document.createElement("div");
+        imgList.innerHTML = '<img data-src="'+imgArr[rand(0,8)]+'" alt="">'+
+                    '<div>'+
+                        '<p>'+
+                            '<span>'+context[rand(0,9)]+'</span>'+'</p>'+
+                    '</div>';
+
+        
+        var imgleng = imgList.getElementsByTagName("img");
+        for(var i=0;i<imgleng.length ; i++){
+            if(imgleng[i].getBoundingClientRect().top <= document.documentElement.clientHeight){
+                imgleng[i].src = imgleng[i].getAttribute("data-src");
+                imgleng[i].style.height = "auto";
+            }
+        }
+
+
+        var minlist = listArr[0];
+        for(var i=0;i<listArr.length;i++){
+                if(minlist.offsetHeight > listArr[i].offsetHeight){
+                    minlist = listArr[i];
+                }
+        }
+         minlist.appendChild(imgList);
+    }
+
+       
+     var imgobj=[];
+     var num = 0;
+    for(var i=0;i<imgArr.length;i++){
+        imgobj[i] = new Image;
+        imgobj[i].src = imgArr[i];
+        imgobj[i].onload = function(){
+            num++;
+            var percent = parseInt(num / imgArr.length * 100) + "%";
+            alert(percent);
+            if(num == imgArr.length){
+                addlen(10);
+            }
+        }
+    }
+    //每次增加十个
+    function addlen(len){
+        for(var j=0;j<len;j++){
+            addElement();
+        }
+    }
+     window.onscroll = function(){
+        if(flowList.getBoundingClientRect().bottom <=  document.documentElement.clientHeight){
+            addlen(10);
+        }
+    }
+    </script>
+    
+</body>
+</html>

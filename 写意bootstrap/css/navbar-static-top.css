@@ -1,0 +1,26 @@
+body {
+  min-height: 2000px;
+}
+
+.navbar-static-top {
+  background-color: #fff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: #cfdb00;
+}
+.navbar-default .navbar-nav>li>a {
+	transition:all 1s;
+	padding: 24px 20px;
+}
+.navbar-header {
+	height: 68px;
+}
+.navbar-toggle {
+	margin-top: 15px;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	background-color: #cfdb00;
+}
+.navbar-brand {
+	padding: 0;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>G不可失</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<!-- 手机端宽度用百分比，图片高度不用设，避免图片变形 
+		动画相对定位（百分比）-->
+		<link rel="stylesheet" href="css/idangerous.swiper.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/animate.css" />
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper clearfix">
+				<div class="swiper-slide start">
+				<!-- 每个页面都有的logo，可以定位在页面中，就不用写这么多次了 -->
+					<img src="img/title.png" alt="" class="timg"/>
+					<div id="title"></div>
+					<div id="time">
+						<p id="bottom"></p>
+						<p id="timebar">
+							<span id="count">0%</span>
+						</p>
+						<img src="img/ricle.png" alt="" id="timebarImg">
+					</div>
+					<img src="img/two1.png" alt="" id="second_img" class=""/>
+				</div>
+				<div class="swiper-slide three">
+					<img src="img/title.png" alt="" class="timg"/>
+					<img src="img/th_word.png" alt="" id="th_word"/>
+				    <a href="#">
+				    	<img src="img/th_btu1.png" alt="" id="th_btu" class="animated pulse infinite" />
+				    </a>
+				    <a href="#">
+				    	<img src="img/th_btu2.png"/ id="activity">
+				    </a>
+				    <div id="windo">
+						<img src="img/title.png" alt="" class="timg"/>
+						<img src="img/th_g.png" alt="" />
+						<img src="img/content.png" alt="" />
+						<img src="img/return.png" alt="" id="return"/>
+					</div>
+				</div>
+				<div class="swiper-slide four">
+					<img src="img/pra2.png" alt="" id="four_word">
+					<img src="img/pra3.png" alt="" class="animated pulse infinite" id="four_btu" />
+				</div>
+				<div class="swiper-slide four">
+					<img src="img/pra4.png" alt="" id="next_word">
+					<img src="img/pra5.png" alt="" class="animated pulse infinite" id="next_btu" />
+				</div>
+				<div class="swiper-slide four">
+					<img src="img/pra6.png" alt="" id="six_word">
+					<img src="img/car.png" alt="" id="car">
+					<img src="img/ji_btu.png" alt="" id="ji_btu" />
+				</div>
+				<div class="swiper-slide four">
+					<img src="img/turn1.png" alt="" id="turn_word" >
+					<div id="turn_pan">
+						<img src="img/pan.png" alt="" id="pan">
+						<img src="img/p.png" alt="" id="zhen" />
+					</div>
+					<img src="img/start.png" alt="" id="start_btu">
+					<div id="jiang1">
+						<img src="img/jiang1.png">
+						<img src="img/share.png">
+					</div>
+					<div id="jiang2">
+						<img src="img/jiang2.png">
+						<img src="img/share.png">
+					</div>
+					<div id="jiang3">
+						<img src="img/jiang3.png">
+						<img src="img/share.png">
+					</div>
+					<div id="han">
+						<img src="img/sh1.png">
+					</div>
+				</div>
+			</div>
+			<div class="pagination"></div>
+		</div>
+		<script src="js/idangerous.swiper.min.js"></script>
+		<script src="js/unkonw.js"></script>
+		<script src="js/tween.js"></script>
+		<script>
+		var th_word = document.getElementById("th_word");
+		var four_word =document.getElementById("four_word");
+		var next_word =document.getElementById("next_word");
+		var six_word =document.getElementById("six_word");
+		  var mySwiper = new Swiper('.swiper-container',{
+		    pagination: '.pagination',
+		    paginationClickable: true,
+		    // calculateHeight:true,当值为true时，Swiper根据slides内容计算容器高度。响应式布局中或不知道slides高度时十分有用（就像响应式的图片）
+		    speed:1000,//划动的时间延时
+		    mode: 'vertical',
+		    //swiper回调函数(划动到第几张才执行动画)
+		    onSlideChangeEnd:function() {
+		    	//获取划到第几张
+		    	switch(mySwiper.activeLoopIndex) {
+		    		case 1:
+		    			th_word.style.opacity = 1;
+		    			th_word.className = "animated bounceInLeft word";
+		    			break;
+		    		case 2:
+		    			four_word.style.opacity = 1;
+		    			four_word.className = "animated bounceInLeft word";
+		    			break;
+		    		case 3:
+		    			next_word.style.opacity = 1;
+		    			next_word.className = "animated bounceInLeft word";
+		    			break;
+		    		case 4:
+		    			six_word.style.opacity = 1;
+		    			six_word.className = "animated bounceInLeft word";
+		    			break;
+		    	}
+		    }
+		  })
+  		</script>
+	</body>
+</html>

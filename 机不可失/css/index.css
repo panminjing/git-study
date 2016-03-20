@@ -1,0 +1,234 @@
+html,body {
+	height: 100%;
+	background-color: #000;
+}
+.start{
+	position: relative;
+	background: url(../img/bg.png) no-repeat;
+    background-size: 100%;
+	overflow: hidden;
+}
+.timg{
+	padding-top: 70px;
+	width: 90%;
+	margin: 0 auto;
+}
+#title{
+	width: 302px;
+	height: 190px;
+	background: url(../img/g.png) no-repeat;
+	background-size: 302px 190px;
+	  margin: 0 auto;
+}
+#timebar{
+	width: 220px;
+	height: 5px;
+	background-color: #e30012;
+	border-radius: 5px;
+	margin: -17px 7px;
+	position: relative;
+}
+#bottom{
+	width: 235px;
+	height: 25px;
+	background: url(../img/bottom.png) no-repeat;
+	background-size: 235px 19px;
+	
+}
+#time{
+	margin: 0 auto;
+	width: 220px;
+	height: 25px;
+	position: relative;
+}
+#count{
+	color: gray;
+	position: absolute;
+	left: 0;
+	top: -18px;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  top: 10px;
+ 
+}
+.swiper-pagination-switch {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #555;
+  margin: 0 0px 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+  
+}
+.swiper-active-switch {
+  background: #fff;
+}
+.swiper-container {
+  width: 100%;
+  /*height: 570px;*/
+  height: 100%;
+  text-align: center;
+}
+.swiper-wrapper {
+	height: 100%;
+}
+#second_img{
+	width: 35%;
+	margin: 0 auto;
+}
+.three{
+	background: url(../img/bg1.png) no-repeat;
+	background-size: 100%;
+}
+#th_btu,#next_btu{
+	width: 140px;
+	height: 160px;
+	margin: 10px auto 0;
+	cursor: pointer;
+}
+.word{
+	width: 90%;
+	height: 130px;
+	margin: 0 auto;
+}
+#activity{
+	width: 137px;
+	height: 106px;
+	margin: 5px  auto 0;
+}
+#windo{
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 568px;
+	width: 100%;
+	height: 570px;
+	background-color: rgba(0,0,0,0.9);
+}
+#windo img:nth-child(2){
+	width: 50%;
+	height: 85px;
+	margin: 0px auto;
+}
+#windo img:nth-child(3){
+	width: 80%;
+	height: 257px;
+	margin:0 auto;
+}
+#return{
+	width: 50%;
+	height: 75px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#timebarImg {
+	-webkit-backface-visibility:hidden; /*隐藏转换的元素的背面解决transform引起的页面闪动*/
+	position: absolute;
+	/*z-index: 1;*//*解决transform引起的页面闪动*/
+	left:2%;
+	top:5px;
+	width: 10px;
+	height: 10px;
+}
+#th_word {
+	opacity: 0;
+}
+.four{
+	background: url(../img/bg2.png) no-repeat;
+	 background-size: 100%;
+}
+#next_word{
+	width: 90%;
+	margin: 100px auto 55px;
+	opacity: 0;
+}
+.swiper-slide {
+	position: relative;
+}
+#four_word {
+	width: 90%;
+	position: absolute;
+	left:5%;
+	top:100px;
+	opacity: 0;
+}
+#four_btu {
+	width:44%;
+	position: absolute;
+	left:28%;
+	top:48%;
+}
+#six_word{
+	width: 90%;
+	margin: 100px auto 0px;
+	opacity: 0;
+}
+#car{
+	width: 90%;
+	margin: -30px auto;
+}
+#ji_btu{
+	width: 30%;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#turn_word{
+	width: 85%;
+	margin: 100px auto 0;
+}
+#pan{
+	width: 220px;
+	height: 220px;
+}
+#turn_pan{
+	margin: 0 auto;
+	position: relative;
+	width: 220px;
+	height: 220px;
+}
+#zhen{
+	width: 52px;
+	height: 100px;
+	position: absolute;
+	left: 105px;
+	top:10px;
+}
+#start_btu{
+	width: 170px;
+	height: 110px;
+	margin: 15px auto 0 ;
+	cursor: pointer;
+}
+#jiang1,#jiang2,#jiang3,#han{
+	display: none;
+	width: 100%;
+	height: 570px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.8);
+}
+#jiang1 img:nth-child(1),#jiang2 img:nth-child(1),#jiang3 img:nth-child(1){
+	width: 243px;
+	height: 371px;
+	margin: 110px auto 0;
+}
+#jiang1 img:nth-child(2),#jiang2 img:nth-child(2),#jiang3 img:nth-child(2){
+	width: 60px;
+	height: 85px;
+	position: absolute;
+	top: 20px;
+	right: 35px;
+}
+#han img{
+	width: 240px;
+	height: 227px;
+	margin: 210px auto 0;
+}
