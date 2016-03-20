@@ -1,0 +1,47 @@
+.fs8() {
+	font-size: 0.8rem;
+}
+.fs10(){
+	font-size: 1rem;
+}
+.fs12(){
+	font-size: 1.2rem;
+}
+.fs14(){
+	font-size: 1.4rem;
+}
+.fs16(){
+	font-size: 1.6rem;
+}
+.fs18(){
+	font-size: 1.8rem;
+}
+.c80(){
+	color:#808080;
+}
+.c1a(){
+	color:#1a1a1a;
+}
+@transit_color:#f8f8f8;
+@font_color:#c5c5c5;
+//引用图片函数
+.bg(@img) {
+	background: url("../img/@{img}") no-repeat;
+}
+//引用相同的
+.button(@width:100%;@height:32px;@btu_bg:#fff;@btu_c:#333;){
+	display: block;
+	width: @width;
+	height: @height;
+	line-height: @height;
+	text-align: center;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	background-color: @btu_bg;
+	color: @btu_c;
+}
+html,body {
+	//max-width: 640px;
+	margin:0 auto;
+	min-width: 320px;
+}
