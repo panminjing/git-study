@@ -1,0 +1,59 @@
+@import "common.less";
+
+#mainContent {
+	background-color: @bg;
+	.flow-list
+	{
+		max-width:1024px;
+		margin:0 auto;
+		overflow: hidden;
+		li {
+			float: left;
+			width:31%;
+			margin-top: 3.5%;
+			>div {
+				margin-bottom: 11%;
+				position: relative;
+				&:hover div {
+					opacity: 1;
+				}
+				div{
+					opacity: 0;
+					transition:all 1s;
+					position: absolute;
+					left:10%;
+					top:10%;
+					height: 80%;
+					width:80%;
+					background-color: rgba(207, 219, 0, 0.6);
+					text-align: center;
+					p{
+						height: 100%;
+						span {
+							background: url(../img/icon-scale.png) no-repeat;
+							background-position: center top;
+							padding-top: 36px;
+							display: inline-block;
+							width:80%;
+							vertical-align: middle;
+							.fs18;
+							color:#fff;
+						}
+						&:after{
+							display: inline-block;
+							vertical-align: middle;
+							content:"";
+							width:1px;
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+		.center-list {
+			margin-left:3.5%;
+			margin-right:3.5%;
+		}
+	}
+}
+

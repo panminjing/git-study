@@ -1,0 +1,67 @@
+@import "common.less";
+
+#mainContent {
+	.part {
+		position: relative;
+		.content-box {
+			position: absolute;
+			left:15%;
+			top:12%;
+			width:42%;
+			h3 {
+				background-color: @green;
+				.fs24;
+				display: inline-block;
+				padding:2% 10px;
+				color:#616161;
+			}
+			p
+			{
+				.fs18;
+				color:#1a1a1a;
+				margin-bottom: 3%;
+			}
+		}
+	}
+}
+@media screen and (min-width:540px) and (max-width:768px) {
+	body,html {
+		font-size: 8px;
+	}
+	#mainContent {
+		.part-2 {
+			.content-box 
+			{
+				div {
+					width:80%;
+				}
+				
+			}
+		}
+	}
+}
+@media screen and (max-width:539px) {
+	body,html {
+		font-size: 8px;
+	}
+	#mainContent {
+		.part-2 {
+			.content-box 
+			{
+				h3 {
+					.fs18;
+				}
+				p{
+					.fs14;
+				}
+				width:64%;
+				left:4%;
+				top:4%;
+				div {
+					width:60%;
+				}
+				
+			}
+		}
+	}
+}

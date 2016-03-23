@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* 头部 */
+#header {
+  box-shadow: 0 2px 4px #c7c7c7;
+  background-color: #fff;
+}
+#header .logo {
+  width: 180px;
+  margin-left: 7px;
+  float: left;
+}
+#header .toggle-button {
+  display: none;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#header .nav {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+#header .nav ul {
+  float: right;
+}
+#header .nav ul li {
+  float: left;
+}
+#header .nav ul .active a {
+  background-color: #cfdb00;
+}
+#header .nav ul a {
+  display: block;
+  width: 96px;
+  height: 68px;
+  text-align: center;
+  line-height: 68px;
+  font-size: 1.4em;
+  color: #1e1e1e;
+  transition: background 1s;
+}
+#header .nav ul a:hover {
+  background-color: #cfdb00;
+}
+.part-1 {
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto 4%;
+  padding-top: 8% ;
+}
+/* 页脚 */
+h2.title-h2 {
+  color: #888888;
+  font-size: 2.6em;
+  position: relative;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+}
+h2.title-h2:before {
+  content: "";
+  position: absolute;
+  left: -138px;
+  top: 39px;
+  width: 120px;
+  height: 2px;
+  background-color: #cfdb00;
+}
+h2.title-h2:after {
+  content: "";
+  position: absolute;
+  right: -138px;
+  top: 39px;
+  width: 120px;
+  height: 2px;
+  background-color: #cfdb00;
+}
+#footer {
+  text-align: center;
+}
+#footer .contact-box {
+  padding-top: 5.4%;
+  padding-bottom: 9.7%;
+}
+#footer .contact-box p {
+  font-size: 1.6em;
+  color: #898989;
+}
+#footer .contact-box p a {
+  color: #898989;
+}
+#footer .copyright {
+  background-color: #b4b4b4;
+  border-top: 4px solid #cfdb00;
+  height: 64px;
+  line-height: 64px;
+  color: #fff;
+  font-size: 2em;
+}
+@media screen and (max-width: 768px) {
+  #header .logo {
+    float: none;
+  }
+  #header .toggle-button {
+    display: block;
+  }
+  #header .nav ul {
+    display: none;
+    float: none;
+  }
+  #header .nav ul li {
+    float: none;
+  }
+  #header .nav ul a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+  h2.title-h2:before,
+  h2.title-h2:after {
+    width: 60px;
+  }
+  h2.title-h2:before {
+    left: -78px;
+  }
+  h2.title-h2:after {
+    right: -78px;
+  }
+}
+#mainContent {
+  background-color: #f5f5f5;
+}
+#mainContent .service-list {
+  width: 92%;
+  margin: 0 auto;
+}
+#mainContent .service-list li {
+  border-bottom: 1px solid #d9d9d9;
+}
+#mainContent .service-list li a {
+  display: block;
+  overflow: hidden;
+}
+#mainContent .service-list li:hover .left-box {
+  background-color: #cfdb00;
+}
+#mainContent .service-list li:hover .left-box .gray-pic {
+  display: none;
+}
+#mainContent .service-list li:hover .left-box .color-pic {
+  display: block;
+}
+#mainContent .service-list li:hover .right-box h3 {
+  color: #333;
+}
+#mainContent .service-list li:hover .right-box p {
+  color: #666;
+}
+#mainContent .service-list li .left-box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 65.4%;
+  background-color: #e1e1e1;
+  transition: all 1s;
+}
+#mainContent .service-list li img {
+  width: 96%;
+}
+#mainContent .service-list li .color-pic {
+  display: none;
+}
+#mainContent .service-list li .right-box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 34%;
+}
+#mainContent .service-list li h3 {
+  color: #b3b3b3;
+  font-size: 2.6em;
+  transition: all .6s;
+}
+#mainContent .service-list li p {
+  color: #b4b4b4;
+  font-size: 1.6em;
+  transition: all .6s;
+}
+#mainContent .service-list .even-list .left-box {
+  float: right;
+}
+#mainContent .service-list .even-list .left-box img {
+  float: right;
+}
+#mainContent .service-list .even-list .right-box {
+  float: left;
+}
+@media screen and (max-width: 768px) {
+  #mainContent .service-list li .left-box,
+  #mainContent .service-list li .right-box {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #mainContent .service-list li .left-box img,
+  #mainContent .service-list li .right-box img {
+    width: 100%;
+  }
+  #mainContent .service-list li .left-box h3,
+  #mainContent .service-list li .right-box h3 {
+    margin: 4% 0;
+  }
+  #mainContent .service-list li a {
+    margin-bottom: 6%;
+  }
+}
